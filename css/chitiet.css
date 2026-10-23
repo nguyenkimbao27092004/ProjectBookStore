@@ -1,0 +1,115 @@
+
+.chitietnoidung{
+    display: flex;
+}
+.thongtinsanpham,.chitietsanpham{
+    margin-right: 50px;
+}
+.hinhminhhoa{
+    flex-basis: 30%;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.hinhminhhoa img{
+    width: 250px;
+
+}
+.noidung{
+    flex-basis: 70%;
+    width: 100%;
+
+}
+.chitietsanpham{
+    width: 100%;
+}
+
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: "★";
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .minus-btn, .plus-btn {
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  
+  .minus-btn:hover, .plus-btn:hover {
+    background-color: #e0e0e0;
+  }
+
+  #nut1 , #nut2{
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 30px;
+    border: 1px solid black;
+    padding: 10px 0px;
+  }
+
+.col a{
+    text-decoration: none;
+    color: black;
+}
+
+#nut2 a{
+    color: white;
+}
+#nut2{
+    background-color: black;
+}
+
+.thongtinsanpham p{
+    text-transform: none;
+
+}
+
+#nut1:hover{
+    transform: scale(.9);
+}
+#nut2:hover{
+    transform: scale(.9);
+}
+

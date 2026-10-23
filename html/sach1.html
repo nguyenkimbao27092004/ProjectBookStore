@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đứa Con Của Thời Tiết - Tập 1</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Đứa Con Của Thời Tiết - Tập 1</title>
+        <script src="../js/script.js"></script>
+        <link rel="stylesheet" href="../css/chitiet.css">
+        <link rel="stylesheet" href="../css/services.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
+        <link rel="stylesheet" href="../bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+        <link rel="icon" type="image/png" href="../img/icon.png">
+    </head>
+</head>
+<body>
+    <header class="header">
+        <div class="header-2">
+        
+            <div class="header-1">
+                <img src="../img/Logo.png" alt="">        
+            </div>
+            
+            <nav class="menu">
+            <li><a href="../html/home.html" class="active">Home</a></li>
+            <li><a href="../html/event.html">Events</a></li>
+            <li><a href="../html/gioithieukobos.html#aboutus">About Us</a></li>
+            <li><a href="#footer_content">Support</a></li>
+            </nav>
+        
+            <div class="icons">
+                <div><input type="text" placeholder="Search here" name="search" style="border-radius: 20px; width: 250px;"></div>
+                <div id="search-btn" class="bi bi-search"></div>
+                    <a href="#" class="bi bi-bookmark-heart-fill"></a>
+                    <a href="#" class="bi bi-bag-fill"></a>
+                    <a href="../html/signin.html" class="bi bi-person-circle"></a>
+            </div>
+        </div>
+        </header>
+
+
+        <main>
+            <div class="main-content">
+                <div class="services">
+                    <div class="chitietsanpham">
+                        <div class="chitietnoidung">
+                        <div class="hinhminhhoa">
+                            <img src="../img/duacontt1.jpg" alt="">
+                        </div>
+                        <div class="noidung">
+                            <h2 style="color: black;">Đứa Con Của Thời Tiết - Tập 1</h2>
+                            <div class="nd0" style="display: flex;">
+                            <div class="nd1" style="flex-basis: 50%;">
+                                <p>Nhà cung cấp: <b style="color:darkturquoise;">IPM</b></p>
+                                <p>Nhà xuất bản: <b>NXB Hà Nội</b></p>
+                            </div>
+                            <div class="nd2" style="flex-basis: 50%;">
+                                <p>Tác giả: <b>SHINKAI MAKOTO</b></p>
+                                <p>Hình thức bìa: <b>Bìa Mềm</b></p>
+                            </div>
+                        </div>
+                            <div class="nd3" style="margin-right: 480px;">
+
+                                <div class="rating">
+                                    <input type="radio" id="star5" name="rate" value="1" />
+                                    <label for="star5" title="text"></label>
+                                    <input type="radio" id="star4" name="rate" value="2" />
+                                    <label for="star4" title="text"></label>
+                                    <input type="radio" id="star3" name="rate" value="3" />
+                                    <label for="star3" title="text"></label>
+                                    <input type="radio" id="star2" name="rate" value="4" />
+                                    <label for="star2" title="text"></label>
+                                    <input checked="" type="radio" id="star1" name="rate" value="5" />
+                                    <label for="star1" title="text"></label>
+                                </div>
+                            </div>
+                            <div class="nd4">
+                                <p style="color: red; font-size: 25px;"><b>85.000 đ</b></p>
+                                <p>Chính sách đổi trả:&nbsp;&nbsp;
+                                    Đổi trả sản phẩm trong 30 ngày
+                                    </p>
+                                <p>Thời gian giao hàng: <label for="delivery-date"></label>
+                                    <input type="date" id="delivery-date" name="delivery-date">
+                                    </p>
+                                    <p>
+                                        <div class="quantity">
+                                        <p style="font-size: 20px; padding-top: 8px;" ><b>Số lượng:</b></p>
+                                        &nbsp;
+                                        <button class="minus-btn" type="button">-</button>
+                                        <input type="text" class="quantity-input" value="1">
+                                        <button class="plus-btn" type="button">+</button>
+                                      </div>
+                                      </p>
+                            </div>
+                            <div class="nd5">
+                                <div class="container text-center">
+                                    <div class="row">
+                                      <div class="col" id="nut1">
+                                        <a href="#" onclick="addToCart(event)"><b>Thêm vào giỏ hàng</b></a>
+                                      </div>
+                                      <div class="col" id="nut2">
+                                        <a href="#"><b>Mua ngay</b></a>
+                                      </div>
+                                    </div>
+                            </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="thongtinsanpham">
+                    <h3>Thông tin sản phẩm</h3>
+                    <div class="row">
+                        <div class="col-3">
+                            <p>Mã hàng</p>
+                            <p>Tên Nhà Cung Cấp</p>
+                            <p>Tác giả</p>
+                            <p>NXB</p>
+                            <p>Năm XB</p>
+                            <p>Ngôn Ngữ</p>
+                            <p>Trọng lượng (gr)</p>
+                            <p>Kích Thước Bao Bì</p>
+                            <p>Số trang</p>
+                            <p>Hình thức</p>
+                            <p></p>
+                        </div>
+                        <div class="col-9">
+                            <p>8935250703741</p>
+                            <p>IPM</p>
+                            <p>SHINKAI MAKOTO</p>
+                            <p>NXB Hà Nội</p>
+                            <p>2021</p>
+                            <p>Tiếng Việt</p>
+                            <p>260</p>
+                            <p>18 x 13 x 1.5 cm</p>
+                            <p>284</p>
+                            <p>Bìa Mềm</p>
+                        </div>
+                      </div>
+                      <p>Giá sản phẩm trên Kobos.com đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như Phụ phí đóng gói, phí vận chuyển, phụ phí hàng cồng kềnh,...</p>
+                      <p style="color: red;">Chính sách khuyến mãi trên Kobos.com không áp dụng cho Hệ thống Nhà sách Kobos trên toàn quốc</p>
+                      <hr>
+                      <h4>Đứa Con Của Thời Tiết</h4>
+                      <p>Tình thơ, gặp gỡ và chia ly là những vòng sóng đồng tâm trong thế giới Shinkai Makoto.</p>
+                      <p>Từng có cô Yuki chia tay Takao ở Khu vườn ngôn từ để đến dạy văn cho Mitsuha ở Your Name.</p>
+                      <p>Nay lại có Mitsuha và Taki chia tay Your Name. để sang ĐỨA CON CỦA THỜI TIẾT, gặp gỡ các tâm sóng mới là Hina và Hodaka.</p>
+                      <p>Đứa con của thời tiết phác ra thương yêu cô đọng giữa hoang mang của đô thị lớn và ngặt nghèo hơn, là giữa hoang mang của một thời đại biến đổi khí hậu bấp bênh.</p>
+                      <p>Vì một sự cố tình cờ, Hina được tạo hóa ban cho năng lực đặc biệt: làm nắng. Năng lực ấy càng thêm nhiệm màu khi đặt vào bối cảnh Nhật Bản hứng mưa triền miên, mưa đến mức vòm trời âm u trở thành cơm bữa, nước dâng gặm dần các đảo, và Tokyo có nguy cơ biến thành đô thị kênh đào.</p>
+                      <p>Nhưng đến đây, phong cách song hành nhất quán của Shinkai lại trỗi dậy. Trong lạc có bi, trong hạnh phúc sẵn chia ly, được ban phép màu ắt phải đánh đổi. Đứa con của thời tiết cũng không thể tùy ý tắt bật nắng mưa mà không phải trả giá gì. Theo sau một lần làm nắng, là chất chứa hàng chuỗi ăn mòn, hối hận, mạo hiểm, giải cứu, và đằng đẵng cách xa.</p>
+                      <p>Cũng như Your Name., ĐỨA CON CỦA THỜI TIẾT tiếp tục đan cài giữa truyền thống và hiện đại, huyền thoại và thực tế, nguy cơ và mộng ước, thiên tai và con người… nhưng có điểm khác là, lần đầu tiên hạnh phúc cá nhân đã được nhấn mạnh, nhân vật đã bứt mình khỏi tâm thế bao la vì mọi người.</p>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>KOBOS</h1>
+                    <p style="color: white;">Impossible is nothing.</p>
+                    <p style="color:var(--color-neutral-30);">Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM Công Ty Cổ Phần Phát Hành Sách TP HCM.</p>
+                    <P style="text-align: center; color:var(--color-neutral-30);"> - <i class="bi bi-geo-alt-fill"></i> 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam -</P>
+                    <p style="color:var(--color-neutral-30);">KOBOS.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống KOBOS trên toàn quốc.</p>
+        
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+        
+                        <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+        
+                        <a href="https://www.tiktok.com/" class="footer-link" id="tiktok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                   <h3>Map</h3>
+                   <div style="max-width:100%;overflow:hidden;color:red;width:300px;height:300px;"><div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=62+Đường+Lê+Lợi,+Bến+Nghé,+Quận+1,+Thành+phố+Hồ+Chí+Minh,+Việt+Nam&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googl-ehtml" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a><style>#canvas-for-googlemap img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+                </ul>
+        
+                <ul class="footer-list">
+                    <li>
+                        <h3>Services</h3>
+                    </li>
+                    <li>
+                        <a href="../html/dieukhoansudung.html" class="footer-link">Điều khoản sử dụng</a>
+                    </li>
+                    <li>
+                        <a href="../html/chinhsachbaomat.html" class="footer-link">Chính sách bảo mật thông tin cá nhân</a>
+                    </li>
+                    <li>
+                        <a href="../html/gioithieukobos.html" class="footer-link">Giới thiệu Kobos</a>
+                    </li>
+                    <li>
+                        <a href="../html/chinhsachbaohanh.html" class="footer-link">Chính sách bảo hành - bồi hoàn</a>
+                    </li>
+                    <li>
+                        <h3>Contact</h3>
+                    </li>
+                    <li>
+                        <p style="color:var(--color-neutral-30);"><i class="bi bi-telephone"> </i>1900636467</p>
+                    </li>
+                    <li>
+                        <p style="color:var(--color-neutral-30);"><i class="bi bi-envelope"> </i>cskh@kobos.com.vn</p>
+                    </li>
+                </ul>
+        
+                <div id="footer_subscribe">
+                    <h3>Subscribe</h3>
+        
+                    <p>
+                        Enter your e-mail to get notified about
+                        our news notifications
+                    </p>
+        
+                    <div id="input_group">
+                        <input type="email" id="email" placeholder="Example@gmail.com" style="background-color: white; color: black;">
+                        <button>
+                            <i class="bi bi-envelope-open"></i>
+                        </button>
+                    </div>
+        
+                </div>
+            </div>
+        
+            <div id="footer_copyright">
+                &#169
+                2024 all rights reserved. Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.
+            </div>
+        </footer>
+
+        <script>
+            //SaoDanhGiaNgauNhien
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        
+            function setRandomRating() {
+                var ratingInputs = document.querySelectorAll('.rating input');
+                var randomIndex = getRandomNumber(0, ratingInputs.length - 1);
+                ratingInputs[randomIndex].checked = true;
+            }
+            setRandomRating();
+        </script>   
+</body>
+</html>

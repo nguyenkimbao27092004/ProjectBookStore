@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOBOS</title>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <script src="../js/swiper-bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="../img/icon.png">
+
+</head>
+<body>
+
+<!--------------------------------------------------------------------------------------------menu------------------------------------------------------------------->
+<header class="header">
+<div class="header-2">
+
+    <div class="header-1">
+        <img src="../img/Logo.png" alt="">        
+    </div>
+    
+    <nav class="menu">
+        <li><a href="../html/home.html" class="active">Home</a></li>
+        <li><a href="../html/event.html">Events</a></li>
+        <li><a href="../html/gioithieukobos.html#aboutus">About Us</a></li>
+        <li><a href="#footer_content">Support</a></li>
+        </nav>
+
+    <div class="icons">
+        <div><input type="text" placeholder="Search here" name="search" style="border-radius: 20px; width: 250px;"></div>
+        <div id="search-btn" class="bi bi-search"></div>
+            <a href="#" class="bi bi-bookmark-heart-fill"></a>
+            <a href="#" class="bi bi-bag-fill"></a>
+            <a href="../html/signin.html" class="bi bi-person-circle"></a>
+    </div>
+</div>
+</header>
+
+<!--------------------------------------------------------------------------------------------------video--------------------------------------------------------------------------------->
+<section class="home" id="home">
+    
+    <div class="row">
+            <div class="content">
+            <div id="background-video-container">
+                <video autoplay muted loop id="background-video">
+                    <source src="../img/DuaConThoiTiet.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <div class="video-controls">
+                    <button id="toggle-sound-btn" class="sound-off"></button>
+                </div>
+                <div class="video-text-overlay" id="videotext">
+                    <h3 style="font-size: 80px; color: #fefefe; font-family:'Pattaya';letter-spacing: 4px;">Manga Sale 25%</h3>
+                    <p style="text-align: left; color: white;padding: 0 15px; font-family: 'Shantell Sans';">"Một mùa hè, Hodaka, một học sinh trung học, rời khỏi quê nhà để đến Tokyo. Tại đây, anh gặp Hina, một cô gái trẻ sống cùng em trai và có khả năng đặc biệt là làm dừng mưa bằng cách cầu nguyện. Hodaka và Hina trở thành bạn thân và cùng nhau trải qua nhiều cuộc phiêu lưu. Tuy nhiên, họ phải đối mặt với nhiều khó khăn và thử thách trong cuộc sống."</p>
+                    <a href="../html/sach1.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+            <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href="../html/sach1.html"><img src="../img/duaconthoitieet2.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="../html/sach1.html"><img src="../img/duacontt1.jpg" alt=""></a></div>
+              <div class="swiper-slide"><a href="../html/sach2.html"><img src="../img/duacontt2.png" alt=""></a></div>
+              <div class="swiper-slide"><a href="../html/sach3.html"><img src="../img/duacontt3.jpg" alt=""></a></div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+     
+    
+    </div>
+    
+</section>
+<!-- ---------------------------------------------------------------------------------Main--------------------------------------------------------------------------------- -->
+<main>
+
+
+    <div class="main-content">
+        <div class="mt-5"><img src="../img/mangacollection.jpg" alt="" width="100%"></div>
+        <div class="sach">
+            <br>
+            <h2> <img id="icon" src="../img/mangaicon.jpg" alt=""> Manga nổi bật</h2>
+
+            <div class="container text-left">
+                <div class="row row-cols-7" id="lophocmatngu">
+            <div class="col" id="lhmn"><a href="../html/sach4.html" id="xoagach"><img src="../img/rezero4.jpg" alt=""><p>Re:zero - Bắt Đầu Lại Ở Thế Giới Khác 2</p><h4 id="tien">108.800 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach5.html" id="xoagach"><img src="../img/caumanhaxi.jpg" alt=""><p>"Cậu" Ma Nhà Xí Hanako - Sau Giờ Học</p><h4 id="tien">28.500 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach6.html" id="xoagach"><img src="../img/chuthuathoichien.jpg" alt=""><p>Jujutsu Kaisen - Tập 22: Kết Giới Sakurajima</p><h4 id="tien">28.500 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach7.html" id="xoagach"><img src="../img/frieren_phap_su_tien_tang_bia_tap_3.jpg" alt=""><p>Frieren - Pháp Sư Tiễn Táng - Tập 3</p><h4 id="tien">42.750 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach8.html" id="xoagach"><img src="../img/oshinoko.jpg" alt=""><p>Oshi No Ko - Dưới Ánh Hào Quang - Tập 7</p><h4 id="tien">52.200 đ</h4></a></div>
+                </div>
+                </div>
+        </div>
+
+        <div class="sach">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-auto">
+                      <video controls autoplay muted loop>
+                      <source src="../img/파워퍼프걸로 변신한 뉴진스  𝙉𝙚𝙬𝙅𝙚𝙖𝙣𝙨 - 𝙉𝙚𝙬 𝙅𝙚𝙖𝙣𝙨 [한글 가사-해석].mp4">
+                    </video>
+                    </div>
+                    <div class="col-md-auto" id="hinhvavideo">
+                        <a href="../html/sach9.html"><img src="../img/hinhvavideo1.jpg" alt=""></a>
+                        <a href="../html/sach10.html"><img src="../img/hinhvavideo2.jpg" alt=""></a>
+                    </div>
+
+                  </div>
+            </div>
+
+        </div>
+
+        <div class="sach">
+            <h2> <img id="icon" src="../img/lightnovelicon.png" alt=""> LightNovel nổi bật</h2>
+
+            <div class="container text-left">
+                <div class="row row-cols-7" id="lophocmatngu">
+            <div class="col" id="lhmn"><a href="../html/sach11.html" id="xoagach"><img src="../img/eleina.jpg" alt=""><p>Hành Trình Của Elaina - Tập 14</p><h4 id="tien">97.750 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach12.html" id="xoagach"><img src="../img/nguyetdaodigioi.png" alt=""><p>Nguyệt Đạo Dị Giới - Tập 4 - Bản Đặc Biệt</p><h4 id="tien">104.490 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach13.html" id="xoagach"><img src="../img/chenthanhcuairis.jpg" alt=""><p>Chén Thánh Của Eris - Tập 1</p><h4 id="tien">80.750 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach15.html" id="xoagach"><img src="../img/swordartonline.jpg" alt=""><p>Sword Art Online Progressive 008</p><h4 id="tien">114.750 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach16.html" id="xoagach"><img src="../img/nhungnguoiketnoikhanang.jpg" alt=""><p>Infinite Dendrogram - Tập 5</p><h4 id="tien">89.700 đ</h4></a></div>
+
+
+                </div>
+                </div>
+        </div>
+
+        <div class="topsach">
+            <h2>Bảng xếp hạng bán chạy tuần</h2>
+            <div class="topsach1">
+                <div class="container text-left">
+                    <div class="row row-cols-12">
+                      <div class="col-1" id="topsachso">01<p><i class="bi bi-arrow-up-short" id="muiten"></i></p></div>
+                      <div class="col-2"><a href="../html/sach17.html"><img src="../img/top1.jpg" alt="" id="topsachhinh" class="hoverable topsachhinh1"></a></div>
+                      <div class="col-9" id="topsachnd"><h4>Bocchi The Rock! - Tập 1 - Tặng Kèm Bìa Áo Đặc Biệt + Bookmark</h4><p>Aki Hamazi</p><h5>719 điểm</h5></div>
+                      <div class="col-1" id="topsachso">02<p><i class="bi bi-arrow-up-short" id="muiten"></i></p></div>
+                      <div class="col-2"><a href="../html/sach18.html"><img src="../img/top2.jpg" alt="" id="topsachhinh" class="hoverable topsachhinh2"></a></div>
+                      <div class="col-9" id="topsachnd"><h4>My Hero Academia - Học Viện Siêu Anh Hùng - Tập 36: Hai Nguồn Lửa Sáng - Tặng Kèm Bookmark</h4><p>Kohei Horikoshi</p><h5>489 điểm</h5></div>
+                      <div class="col-1" id="topsachso">03<p><i class="bi bi-arrow-up-short" id="muiten"></i></p></div>
+                      <div class="col-2"><a href="../html/sach19.html"><img src="../img/top3.jpg" alt="" id="topsachhinh" class="hoverable topsachhinh3"></a></div>
+                      <div class="col-9" id="topsachnd"><h4>Cardcaptor Sakura - Thẻ Bài Pha Lê - Tập 8</h4><p>Clamp</p><h5>471 điểm</h5></div>
+                      <div class="col-1" id="topsachso">04<p><i class="bi bi-arrow-up-short" id="muiten"></i></p></div>
+                      <div class="col-2"><a href="../html/sach20.html"><img src="../img/top4.jpg" alt="" id="topsachhinh" class="hoverable topsachhinh4"></a></div>
+                      <div class="col-9" id="topsachnd"><h4>Solo Leveling - Tôi Thăng Cấp Một Mình - Tập 10 - Tặng Kèm Obi + 2 PVC Card</h4><p>Dubu (Redice Studio), Chugong</p><h5>407 điểm</h5></div>
+                      <div class="col-1" id="topsachso">05<p><i class="bi bi-arrow-up-short" id="muiten"></i></p></div>
+                      <div class="col-2"><a href="../html/sach21.html"><img src="../img/top5.jpg" alt="" id="topsachhinh" class="hoverable topsachhinh5"></a></div>
+                      <div class="col-9" id="topsachnd"><h4>Dr.STONE - Tập 23: Động Cơ Của Tương Lai</h4><p>Riichiro Inagaki, Boichi</p><h5>398 điểm</h5></div>
+                    </div>
+                  </div>
+            </div>
+            <div class="topsach2">
+                <div class="sach1">
+                        <div class="row">
+                            <div class="col-4"><img src="../img/top1.jpg" alt=""></div>
+                            <div class="col-8"><h3>Bocchi The Rock! - Tập 1</h3><p>Tác giả: Aki Hamazi</p><p>Nhà xuất bản: Kim Đồng</p><h5>38.000 đ</h5><p>Goto Hitori là một nữ sinh hướng nội. Giao tiếp kém, học cũng kém, tay chân lại vụng về, nên suốt thời cấp 2 chẳng thể kết bạn với ai, chỉ có cây guitar bầu bạn. Khi lên lớp 10, một ngày nọ, cô nàng tình cờ gia nhập Ban nhạc Đoàn Kết, lấy nghệ danh là Bocchi và trở thành một tay guitar khuấy đảo nền nhạc Rock nước Nhật!? Nhưng trước hết, Bocchi phải nhìn được vào mắt các thành viên trong ban nhạc đã!</p></h4></div>
+                        </div>
+                </div>
+                <div class="sach2">
+                  <div class="row">
+                    <div class="col-4"><img src="../img/top2.jpg" alt=""></div>
+                    <div class="col-8"><h3>My Hero Academia - Tập 36</h3><p>Tác giả: Kohei Horikoshi</p><p>Nhà xuất bản: Kim Đồng</p><h5>23.750 đ</h5><p>Ta đến đây vì sở hữu kosei dị hình, cộng thêm bất mãn với xã hội. Chắc so với những kẻ khác thì ta không có sức mạnh hay đại nghĩa gì cả, dẫu vậy ta… nơi này…</p></h4></div>
+                  </div>
+                </div>
+                <div class="sach3">
+                    <div class="row">
+                      <div class="col-4"><img src="../img/top3.jpg" alt=""></div>
+                      <div class="col-8"><h3>Cardcaptor Sakura - Tập 8</h3><p>Tác giả: Clamp</p><p>Nhà xuất bản: Kim Đồng</p><h5>28.500 đ</h5><p>Cuối cùng Sakura cũng biết được về chân tướng của những “thẻ bài pha lê”. Nhằm mục đích khiến Sakura tạo ra những lá bài mới, Kaito đã đến trường học của cô bé và sử dụng Akiho để tấn công Sakura!</p><p>Nhưng trên người Akiho đã có một phép thuật khác…? Ngoài ra, câu chuyện quá khứ mà người mẹ Nadeshiko của Sakura đã kể lại với Fujitaka là gì!?</p></h4></div>
+                    </div>
+                </div>
+                <div class="sach4">
+                    <div class="row">
+                      <div class="col-4"><img src="../img/top4.jpg" alt=""></div>
+                      <div class="col-8"><h3>Solo Leveling - Tập 10</h3><p>Tác giả: Dubu (Redice Studio), Chugong</p><p>Nhà xuất bản: Kim Đồng</p><h5>83.600 đ</h5><p>THỢ SĂN SUNG JIN WOO, sau khi bị cuốn vào trận chiến với Trùm của HẦM NGỤC HẠNG A, không thể che giấu được khả năng thực sự bởi đội ngũ triệu hồi thú mà anh gọi ra đã gây ngỡ ngàng cho tất cả những người chứng kiến lúc đó...</p></h4></div>
+                    </div>
+                </div>
+                <div class="sach5">
+                    <div class="row">
+                      <div class="col-4"><img src="../img/top5.jpg" alt=""></div>
+                      <div class="col-8"><h3>Dr.STONE 23</h3><p>Tác giả: Boichi, 稲垣 理一郎</p><p>Nhà xuất bản: Kim Đồng</p><h5>141.550 đ</h5><p>Senku hồi sinh và phá giải lớp hóa đá cho các thành viên Vương quốc khoa học. Trong quá trình đó, điều cấm kị lớn nhất của nhân loại ẩn trong hiện tượng hóa đá dần sáng tỏ! Kế hoạch đổ bộ mặt trang vạch mặt Why Man – căn nguyên của mọi chuyện, chính thức tái khởi động và lôi kéo thế giới vào cuộc!!</p></h4></div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="mt-3"><img src="../img/mangacollection2.jpg" alt="" width="100%"></div>
+        <div class="sach">
+            <h2> <img id="icon" src="../img/horroricon.png" alt=""> Truyện Kinh Dị nổi bật</h2>
+
+            <div class="container text-left">
+                <div class="row row-cols-7" id="lophocmatngu">
+            <div class="col" id="lhmn"><a href="../html/sach22.html" id="xoagach"><img src="../img/kinhdi1.jpg" alt=""><p>Bách Khoa Ma Quỷ - Bách Quỷ Dạ Hành</p><h4 id="tien">241.200 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach23.html" id="xoagach"><img src="../img/kinhdi2.jpeg" alt=""><p>Người Dọn Dẹp Hiện Trường Án Mạng</p><h4 id="tien">68.620 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach24.html" id="xoagach"><img src="../img/kinhdi3.jpg" alt=""><p>IT - Gã Hề Ma Quái - Tập 2</p><h4 id="tien">218.270 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach25.html" id="xoagach"><img src="../img/kinhdi4.jpg" alt=""><p>Tổng Đài Kể Chuyện Lúc 0h</p><h4 id="tien">122.640 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach26.html" id="xoagach"><img src="../img/kinhdi5.jpg" alt=""><p>The Outsider - Kẻ Song Trùng</p><h4 id="tien">247.470 đ</h4></a></div>
+
+
+                </div>
+                </div>
+        </div>
+
+        <div class="mt-3"><img src="../img/mangacollection1.jpg" alt="" width="100%"></div>
+        <div class="sach">
+            <h2> <img id="icon" src="../img/childrenicon.png" alt=""> Truyện thiếu nhi nổi bật</h2>
+
+            <div class="container text-left">
+                <div class="row row-cols-7" id="lophocmatngu">
+            <div class="col" id="lhmn"><a href="../html/sach27.html" id="xoagach"><img src="../img/lophocmatngu1.jpg" alt=""><p>Tác Phẩm Kinh Điển Dành Cho Thiếu Nhi - Alice Ở Xứ Sở Diệu Kỳ</p><h4 id="tien">26.100 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach28.html" id="xoagach"><img src="../img/lophocmatngu2.jpg" alt=""><p>Ehon Kỹ Năng Sống - Miu Bé Nhỏ - Đừng Ăn Vạ Nhé!</p><h4 id="tien">24.000 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach29.html" id="xoagach"><img src="../img/lophocmatngu3.jpg" alt=""><p>Tớ Là Mèo Pusheen - Tập 2: Cuộc Sống Muôn Màu Của Pusheen</p><h4 id="tien">65.000 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach30.html" id="xoagach"><img src="../img/lophocmatngu4.jpg" alt=""><p>Kỹ Năng Sống Đầu Đời Cho Bé - Quy Tắc Ứng Xử Trên Bàn Ăn</p><h4 id="tien">22.500 đ</h4></a></div>
+            <div class="col" id="lhmn"><a href="../html/sach31.html" id="xoagach"><img src="../img/lophocmatngu5.jpg" alt=""><p>Giáo Dục Giới Tính Và Nhân Cách Dành Cho Bé Gái</p><h4 id="tien">22.400 đ</h4></a></div>
+
+
+                </div>
+                </div>
+        </div>
+
+        </div>
+
+        <div class="container text-center" id="baohanh">
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-check2-circle"></i>
+                <p>Mẫu mã đa dạng,
+                    chính hãng</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-truck"></i>
+                <p>Giao hàng toàn quốc</p>
+              </div>
+              <div class="col">
+                <i class="bi bi-shield"></i>
+                <p>Bảo hành có cam kết
+                    tới 12 tháng
+                    </p>
+              </div>
+              <div class="col">
+                <i class="bi bi-arrow-clockwise"></i>
+                <p>Có thể đổi trả tại KOBOS</p>
+              </div>
+            </div>
+
+
+        
+</main>
+
+
+<!------------------------------------------------------------------------------------------------footer------------------------------------------------------------------------------------>
+
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            <h1 class="text-left">KOBOS</h1>
+            <p style="color: white;">Impossible is nothing.</p>
+            <p style="color:var(--color-neutral-30);">Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM Công Ty Cổ Phần Phát Hành Sách TP HCM.</p>
+            <P style="text-align: center; color:var(--color-neutral-30);"> - <i class="bi bi-geo-alt-fill"></i> 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam -</P>
+            <p style="color:var(--color-neutral-30);">KOBOS.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống <c1>KOBOS</c1> trên toàn quốc.</p>
+
+            <div id="footer_social_media">
+                <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/" class="footer-link" id="tiktok">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+            </div>
+        </div>
+        
+        <ul class="footer-list">
+           <h3>Map</h3>
+           <div style="max-width:100%;overflow:hidden;color:red;width:300px;height:300px;"><div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=62+Đường+Lê+Lợi,+Bến+Nghé,+Quận+1,+Thành+phố+Hồ+Chí+Minh,+Việt+Nam&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googl-ehtml" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a><style>#canvas-for-googlemap img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+        </ul>
+
+        <ul class="footer-list">
+            <li>
+                <h3>Services</h3>
+            </li>
+            <li>
+                <a href="../html/dieukhoansudung.html" class="footer-link">Điều khoản sử dụng</a>
+            </li>
+            <li>
+                <a href="../html/chinhsachbaomat.html" class="footer-link">Chính sách bảo mật thông tin cá nhân</a>
+            </li>
+            <li>
+                <a href="../html/gioithieukobos.html" class="footer-link">Giới thiệu Kobos</a>
+            </li>
+            <li>
+                <a href="../html/chinhsachbaohanh.html" class="footer-link">Chính sách bảo hành - bồi hoàn</a>
+            </li>
+            <li>
+                <h3>Contact</h3>
+            </li>
+            <li>
+                <p style="color:var(--color-neutral-30);"><i class="bi bi-telephone"> </i>1900636467</p>
+            </li>
+            <li>
+                <p style="color:var(--color-neutral-30);"><i class="bi bi-envelope"> </i>cskh@kobos.com.vn</p>
+            </li>
+        </ul>
+
+        <div id="footer_subscribe">
+            <h3>Subscribe</h3>
+
+            <p>
+                Enter your e-mail to get notified about
+                our news notifications
+            </p>
+
+            <div id="input_group">
+                <input type="email" id="email" placeholder="Example@gmail.com" style="background-color: white; color: black;">
+                <button>
+                    <i class="bi bi-envelope-open"></i>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer_copyright">
+        &#169
+        2024 all rights reserved. Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.
+    </div>
+</footer>
+
+
+<script>
+
+                                                                            //Slide hinh
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+                                                                    //    video background
+  function resizeVideo() {
+    var video = document.getElementById('background-video');
+    var container = document.getElementById('background-video-container');
+    var aspectRatio = video.videoWidth / video.videoHeight;
+
+    var containerWidth = container.offsetWidth;
+    var containerHeight = container.offsetHeight;
+    var containerAspectRatio = containerWidth / containerHeight;
+
+    if (containerAspectRatio > aspectRatio) {
+        video.style.width = '100%';
+        video.style.height = 'auto';
+    } else {
+        video.style.width = 'auto';
+        video.style.height = '100%';
+    }
+}
+window.onload = function() {
+    resizeVideo();
+};
+
+window.onresize = function() {
+    resizeVideo();
+};
+
+                                                                            //Tat mo am thanh
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('background-video');
+    var toggleSoundBtn = document.getElementById('toggle-sound-btn');
+
+    toggleSoundBtn.addEventListener('click', function () {
+        if (video.muted) {
+            video.muted = false; // Bật âm lượng
+            toggleSoundBtn.classList.remove('sound-off');
+            toggleSoundBtn.classList.add('sound-on');
+        } else {
+            video.muted = true; // Tắt âm lượng
+            toggleSoundBtn.classList.remove('sound-on');
+            toggleSoundBtn.classList.add('sound-off');
+        }
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hoverables = document.querySelectorAll('.hoverable');
+  const firstSach = document.querySelector('.sach1');
+
+  hoverables.forEach(function (hoverable, index) {
+    const sach = document.querySelector(`.sach${index + 1}`);
+    hoverable.addEventListener('mouseover', function () {
+      firstSach.classList.remove('show');
+      sach.classList.add('show');
+    });
+
+    hoverable.addEventListener('mouseout', function () {
+      sach.classList.remove('show');
+      firstSach.classList.add('show');
+    });
+  });
+  
+  firstSach.classList.add('show');
+});
+
+</script>
+
+
+</body>
+</html>

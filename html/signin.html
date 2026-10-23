@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOBOS</title>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <style>
+
+        /*main*/
+        main {
+            height: 500px;
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+       
+        #background-video1 {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: auto; 
+            height: auto;
+            z-index: -1; 
+        }
+        form {
+            color: #f5f5f5;
+            max-width: 500px;
+            height: auto;
+            background: rgba(0, 0, 0, 0.8);
+            flex-grow: 1;
+            padding: 30px 30px 40px;
+            box-shadow: 0px 0px 17px rgba(255, 255, 255, 0.8);
+        }
+
+        .form-group {
+            color: #f5f5f5;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .form-input{
+            color: #f5f5f5;
+            width: 200px;
+            background: transparent;
+            border-bottom: 1px solid #fff;
+            outline:0; 
+            float: right;
+            margin-right: 40px;
+        }
+        .btn {
+            width: 100%;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <!--------------------------------------------------------------------------------------------menu------------------------------------------------------------------->
+        <header class="header">
+            <div class="header-2">
+            
+                <div class="header-1">
+                    <img src="../img/Logo.png" alt="logo">        
+                </div>
+                
+                <nav class="menu">
+                    <li><a href="../html/home.html" class="active">Home</a></li>
+                    <li><a href="../html/event.html">Events</a></li>
+                    <li><a href="../html/gioithieukobos.html#aboutus">About Us</a></li>
+                    <li><a href="#footer_content">Support</a></li>
+                    </nav>
+            
+                <div class="icons">
+                    <div><input type="text" placeholder="Search here" name="search" style="border-radius: 20px; width: 250px;"></div>
+                    <div id="search-btn" class="bi bi-search"></div>
+                        <a href="#" class="bi bi-bookmark-heart-fill"></a>
+                        <a href="#" class="bi bi-bag-fill"></a>
+                        <a href="../html/signin.html" class="bi bi-person-circle"></a>
+                </div>
+            </div>
+        </header>
+        <main>
+
+        <div>
+            <video autoplay muted loop id="background-video1">
+                <source src="../img/SignInBG.mp4" type="video/mp4">
+            </video>
+        </div>
+        <form action="" class="form">
+            <h1 class="text-center">Sign Up</h1>
+            <div class="form-group">
+                <label for="txtName">Tên Đăng Nhập: </label>
+                <input type="text" name="txtName" id="txtName" placeholder="Username" class="form-input">
+                <div id="usercheck" style="color: red;">*Vui lòng nhập tên đăng nhập*</div> 
+            </div>
+            <div class="form-group">
+                <label for="txtEmail">Email: </label>
+                <input type="email" name="email" id="txtEmail" placeholder="@gmail.com" class="form-input" style="text-transform: lowercase;">
+                <div id="emailError" style="color:red; display: none;">*Vui lòng nhập Email hợp lệ*</div>
+
+            </div>
+            
+            <div class="form-group">
+                <label for="txtPW">Mật Khẩu: </label>
+                <input type="password" name="txtPW" id="txtPW" placeholder="Password" class="form-input">
+                <div id="passcheck" style="color:red;">*Vui lòng nhập mật khẩu*</div>
+            </div>
+            <div class="form-group">
+                <label for="txtCPW">Nhập lại mật Khẩu: </label>
+                <input type="password" name="txtCPW" id="txtCPW" placeholder="Nhập lại Password" class="form-input">
+                <div id="conpasscheck" style="color:red;">*Vui lòng nhập đúng mật khẩu*</div>
+            </div>
+            <div class="success-message" style="display:none; color: green; text-align: center;" id="success-message">Đăng ký thành công!</div>
+
+            <input type="submit" class="btn btn-primary mt-5" id="submitbtn" value="Sign Up">
+            <div class="mt-3">
+                <a href="../html/login.html"><button type="button" class="btn btn-primary">Log In</button></a>
+            </div>
+
+            
+        </form>
+
+        </main>
+ <!------------------------------------------------------------------------------------------------footer------------------------------------------------------------------------------------>
+
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>KOBOS</h1>
+                    <p style="color: white;">Impossible is nothing.</p>
+                    <p style="color:var(--color-neutral-30);">Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM Công Ty Cổ Phần Phát Hành Sách TP HCM.</p>
+                    <P style="text-align: center; color:var(--color-neutral-30);"> - <i class="bi bi-geo-alt-fill"></i> 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam -</P>
+                    <p style="color:var(--color-neutral-30);">KOBOS.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống <c1>KOBOS</c1> trên toàn quốc.</p>
+
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="https://www.tiktok.com/" class="footer-link" id="tiktok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <ul class="footer-list">
+                <h3>Map</h3>
+                <div style="max-width:100%;overflow:hidden;color:red;width:300px;height:300px;"><div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=62+Đường+Lê+Lợi,+Bến+Nghé,+Quận+1,+Thành+phố+Hồ+Chí+Minh,+Việt+Nam&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googl-ehtml" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="authorize-map-data">premium bootstrap themes</a><style>#canvas-for-googlemap img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Services</h3>
+                    </li>
+                    <li>
+                        <a href="../html/dieukhoansudung.html" class="footer-link">Điều khoản sử dụng</a>
+                    </li>
+                    <li>
+                        <a href="../html/chinhsachbaomat.html" class="footer-link">Chính sách bảo mật thông tin cá nhân</a>
+                    </li>
+                    <li>
+                        <a href="../html/gioithieukobos.html" class="footer-link">Giới thiệu Kobos</a>
+                    </li>
+                    <li>
+                        <a href="../html/chinhsachbaohanh.html" class="footer-link">Chính sách bảo hành - bồi hoàn</a>
+                    </li>
+                    <li>
+                        <h3>Contact</h3>
+                    </li>
+                    <li>
+                        <p style="color:var(--color-neutral-30);"><i class="bi bi-telephone"> </i>1900636467</p>
+                    </li>
+                    <li>
+                        <p style="color:var(--color-neutral-30);"><i class="bi bi-envelope"> </i>cskh@kobos.com.vn</p>
+                    </li>
+                </ul>
+
+                <div id="footer_subscribe">
+                    <h3>Subscribe</h3>
+
+                    <p>
+                        Enter your e-mail to get notified about
+                        our news notifications
+                    </p>
+
+                    <div id="input_group">
+                        <input type="email" id="email" placeholder="Example@gmail.com" style="background-color: white; color: black;">
+                        <button>
+                            <i class="bi bi-envelope-open"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="footer_copyright">
+                &#169
+                2024 all rights reserved. Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.
+            </div>
+        </footer>
+        <script>
+// Document is ready 
+
+$(document).ready(function () { 
+
+
+// Validate Username 
+
+$("#usercheck").hide(); 
+
+let usernameError = true; 
+
+$("#txtName").keyup(function () { 
+
+    validateUsername(); 
+
+}); 
+
+
+
+function validateUsername() { 
+    let usernameValue = $("#txtName").val(); 
+    if (usernameValue.length == "") { 
+        $("#usercheck").show(); 
+        usernameError = false; 
+        return false; 
+    } else if (usernameValue.length < 4 || usernameValue.length > 15) { 
+        $("#usercheck").show(); 
+        $("#usercheck").html("*Tên đăng nhập quá ngắn*"); 
+        usernameError = false; 
+        return false; 
+    } else { 
+        $("#usercheck").hide();
+        return true;
+    } 
+
+} 
+
+
+    // Validate Email 
+function validateEmail() {
+    const email = document.getElementById("txtEmail");
+    let emailValue = email.value;
+    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+    if (emailValue.length == 0) {
+        $("#emailError").show();
+        return false;
+    } else if (!regex.test(emailValue)) {
+        $("#emailError").text("*Địa chỉ email không hợp lệ*").show();
+        return false;
+    } else {
+        $("#emailError").hide();
+        return true;
+    }
+}
+
+const emailInput = document.getElementById("txtEmail");
+emailInput.addEventListener("blur", validateEmail);
+
+
+
+// Validate Password 
+$("#passcheck").hide(); 
+let passwordError = true; 
+$("#txtPW").keyup(function () { 
+    validatePassword(); 
+}); 
+
+function validatePassword() { 
+    let passwordValue = $("#txtPW").val(); 
+    if (passwordValue.length == "") { 
+        $("#passcheck").show(); 
+        passwordError = false; 
+        return false; 
+    } 
+
+    if (passwordValue.length < 8 || passwordValue.length > 20) { 
+        $("#passcheck").show(); 
+        $("#passcheck").html( 
+            "*Tối thiểu 8 kí tự*"
+        ); 
+
+        $("#passcheck").css("color", "red"); 
+        passwordError = false; 
+        return false; 
+    } else { 
+        $("#passcheck").hide(); 
+        return true;
+    } 
+
+} 
+
+
+
+// Validate Confirm Password 
+
+$("#conpasscheck").hide(); 
+let confirmPasswordError = true; 
+$("#txtCPW").keyup(function () { 
+    validateConfirmPassword(); 
+}); 
+
+function validateConfirmPassword() { 
+    let confirmPasswordValue = $("#txtCPW").val(); 
+    let passwordValue = $("#txtPW").val(); 
+    if (passwordValue != confirmPasswordValue) { 
+        $("#conpasscheck").show(); 
+        $("#conpasscheck").html("*Kiểm tra lại mật khẩu*"); 
+        $("#conpasscheck").css("color", "red"); 
+        confirmPasswordError = false; 
+        return false; 
+    } else { 
+        $("#conpasscheck").hide(); 
+return true;
+    } 
+
+} 
+
+$("#submitbtn").click(function () {
+    event.preventDefault();
+    // Kiểm tra tất cả các điều kiện
+    let isUsernameValid = validateUsername();
+    let isPasswordValid = validatePassword();
+    let isConfirmPasswordValid = validateConfirmPassword();
+    let isEmailValid = validateEmail();
+
+    // Nếu tất cả điều kiện đều hợp lệ
+    if (isUsernameValid && isPasswordValid && isConfirmPasswordValid && isEmailValid) {
+        // Hiển thị thông báo thành công
+        $(".success-message").css("display", "block");
+    }
+});
+
+
+
+
+});
+        </script>
+</body>
+</html>
