@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6adc94841590df8a4cef41a8"
+  },
+  "userId": {
+    "$oid": "id_cua_khach_hang_tu_collection_users"
+  },
+  "items": [
+    {
+      "productId": {
+        "$oid": "6adb98eefdc89e473f593c85"
+      },
+      "title": "Đứa Con Của Thời Tiết - Tập 1",
+      "price": 85000,
+      "quantity": 2
+    },
+    {
+      "productId": {
+        "$oid": "6adc42e48e65245f1f4b65ae"
+      },
+      "title": "Đứa Con Của Thời Tiết - Tập 2",
+      "price": 85000,
+      "quantity": 1
+    }
+  ],
+  "totalAmount": 255000,
+  "shippingAddress": {
+    "receiverName": "Nguyễn Văn A",
+    "phone": "0901234567",
+    "address": "123 Đường Số 1, Phường 2, TP. Biên Hòa, Đồng Nai"
+  },
+  "paymentMethod": "COD",
+  "status": "Pending",
+  "createdAt": {
+    "$date": "2026-10-24T18:18:00Z"
+  }
+}]

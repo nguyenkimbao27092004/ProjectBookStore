@@ -1,0 +1,360 @@
+[{
+  "_id": {
+    "$oid": "6adb98eefdc89e473f593c85"
+  },
+  "title": "Đứa Con Của Thời Tiết - Tập 1",
+  "author": "SHINKAI MAKOTO",
+  "price": 85000,
+  "image": "/img/duacontt1.jpg",
+  "nhaCungCap": "IPM",
+  "nhaXuatBan": "NXB Hà Nội",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc42e48e65245f1f4b65ae"
+  },
+  "title": "Đứa Con Của Thời Tiết - Tập 2",
+  "author": "SHINKAI MAKOTO",
+  "price": 85000,
+  "image": "/img/duacontt2.png",
+  "nhaCungCap": "IPM",
+  "nhaXuatBan": "NXB Hà Nội",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc49518e65245f1f4b65af"
+  },
+  "title": "Đứa Con Của Thời Tiết - Tập 3",
+  "author": "SHINKAI MAKOTO",
+  "price": 85000,
+  "image": "/img/duacontt2.png",
+  "nhaCungCap": "IPM",
+  "nhaXuatBan": "NXB Hà Nội",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc4a5e8e65245f1f4b65b1"
+  },
+  "title": "Re:zero - Bắt Đầu Lại Ở Thế Giới Khác 2 (Tái Bản 2021)",
+  "author": "Tappei Nagatsuki",
+  "price": 108800,
+  "image": "/img/rezero4.jpg",
+  "nhaCungCap": "IPM",
+  "nhaXuatBan": "NXB Hồng Đức",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc4a5e8e65245f1f4b65b2"
+  },
+  "title": "\"Cậu\" Ma Nhà Xí Hanako - Sau Giờ Học",
+  "author": "Aida Iro",
+  "price": 28500,
+  "image": "/img/caumanhaxi.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc4a5e8e65245f1f4b65b3"
+  },
+  "title": "Chú Thuật Hồi Chiến - Tập 22: Kết Giới Sakurajima",
+  "author": "Gege Akutami",
+  "price": 28500,
+  "image": "/img/chuthuathoichien.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc4f858e65245f1f4b65b5"
+  },
+  "title": "Frieren - Pháp Sư Tiễn Táng - Tập 3 - Tặng Kèm Clear File",
+  "author": "Kanehito Yamada, Tsukasa Abe",
+  "price": 42750,
+  "image": "/img/frieren_phap_su_tien_tang_bia_tap_3.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc4f858e65245f1f4b65b6"
+  },
+  "title": "Oshi No Ko - Dưới Ánh Hào Quang - Tập 7",
+  "author": "Aka Akasaka, Mengo Yokoyari",
+  "price": 52200,
+  "image": "/img/oshinoko.jpg",
+  "nhaCungCap": "IPM",
+  "nhaXuatBan": "Hồng Đức",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc4f858e65245f1f4b65b7"
+  },
+  "title": "Powerpuff Girls: Power Up",
+  "author": "Haley Mancini",
+  "price": 54200,
+  "image": "/img/hinhvavideo1.jpg",
+  "nhaCungCap": "IDW Publishing",
+  "nhaXuatBan": "Illustrated edition",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc504e8e65245f1f4b65b9"
+  },
+  "title": "Powerpuff Girls: Power Up My Mojo",
+  "author": "Haley Mancini",
+  "price": 54200,
+  "image": "/img/hinhvavideo2.jpg",
+  "nhaCungCap": "IDW Publishing",
+  "nhaXuatBan": "Illustrated edition",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc504e8e65245f1f4b65ba"
+  },
+  "title": "Hành Trình Của Elaina - Tập 14 - Tặng Kèm 1 Postcard",
+  "author": "Jougi Shiraishi, Azure",
+  "price": 97750,
+  "image": "/img/eleina.jpg",
+  "nhaCungCap": "XYZ",
+  "nhaXuatBan": "Hà Nội",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc504e8e65245f1f4b65bb"
+  },
+  "title": "Nguyệt Đạo Dị Giới - Tập 4 - Bản Đặc Biệt",
+  "author": "Azumi Kei, Matsumoto Mitsuaki",
+  "price": 104490,
+  "image": "/img/nguyetdaodigioi.png",
+  "nhaCungCap": "Skybooks",
+  "nhaXuatBan": "Phụ Nữ Việt Nam",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc518b8e65245f1f4b65bd"
+  },
+  "title": "Chén Thánh Của Eris - Tập 1 - Tặng Kèm Bookmark + Lót Ly",
+  "author": "Kujira Tokiwa, Yu-Nagi",
+  "price": 80750,
+  "image": "/img/chenthanhcuairis.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc518b8e65245f1f4b65be"
+  },
+  "title": "Sword Art Online Progressive 008",
+  "author": "REKI KAWAHARA",
+  "price": 114750,
+  "image": "/img/swordartonline.jpg",
+  "nhaCungCap": "IPM",
+  "nhaXuatBan": "Hà Nội",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc518b8e65245f1f4b65bf"
+  },
+  "title": "Infinite Dendrogram - Tập 5 - Những Người Kết Nối Các Khả Năng",
+  "author": "Kaidou Sakon, Taiki",
+  "price": 89700,
+  "image": "/img/nhungnguoiketnoikhanang.jpg",
+  "nhaCungCap": "Nhã Nam",
+  "nhaXuatBan": "Hà Nội",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc518b8e65245f1f4b65c0"
+  },
+  "title": "Bocchi The Rock! - Tập 1 - Tặng Kèm Bìa Áo Đặc Biệt + Bookmark",
+  "author": "Aki Hamazi",
+  "price": 85000,
+  "image": "/img/top1.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc5e268e65245f1f4b65c2"
+  },
+  "title": "My Hero Academia - Học Viện Siêu Anh Hùng - Tập 36: Hai Nguồn Lửa Sáng - Tặng Kèm Bookmark",
+  "author": "Kohei Horikoshi",
+  "price": 23750,
+  "image": "/img/top2.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc5e268e65245f1f4b65c3"
+  },
+  "title": "Cardcaptor Sakura - Thẻ Bài Pha Lê - Tập 8",
+  "author": "Clamp",
+  "price": 28500,
+  "image": "/img/top3.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc5e268e65245f1f4b65c4"
+  },
+  "title": "Solo Leveling - Tôi Thăng Cấp Một Mình - Tập 10 - Tặng Kèm Obi + 2 PVC Card",
+  "author": "Dubu (Redice Studio), Chugong",
+  "price": 83600,
+  "image": "/img/top4.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc61828e65245f1f4b65c5"
+  },
+  "title": "Dr.STONE - Tập 23: Động Cơ Của Tương Lai",
+  "author": "Riichiro Inagaki, Boichi 25",
+  "price": 141,
+  "image": "/img/top4.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc626a8e65245f1f4b65c7"
+  },
+  "title": "Bách Khoa Ma Quỷ - Bách Quỷ Dạ Hành - Kỳ Thư Về Các Loài Ma Quỷ Nhật Bản",
+  "author": "Epic, Linh Lan, Toriyama Sekien",
+  "price": 241200,
+  "image": "/img/kinhdi1.jpg",
+  "nhaCungCap": "CÔNG TY CỔ PHẦN VĂN HÓA VÀ TRUYỀN THÔNG",
+  "nhaXuatBan": "Văn Học",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc626a8e65245f1f4b65c8"
+  },
+  "title": "Người Dọn Dẹp Hiện Trường Án Mạng",
+  "author": "Lư Lạp Lạp",
+  "price": 68620,
+  "image": "/img/kinhdi2.jpeg",
+  "nhaCungCap": "AZ Việt Nam",
+  "nhaXuatBan": "Dân Trí",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc626a8e65245f1f4b65c9"
+  },
+  "title": "IT - Gã Hề Ma Quái - Tập 2",
+  "author": "Stephen King",
+  "price": 218270,
+  "image": "/img/kinhdi3.jpg",
+  "nhaCungCap": "1980 Books",
+  "nhaXuatBan": "NXB Thanh Niên",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc626a8e65245f1f4b65ca"
+  },
+  "title": "Tổng Đài Kể Chuyện Lúc 0h",
+  "author": "Emma Hạ My",
+  "price": 122640,
+  "image": "/img/kinhdi4.jpg",
+  "nhaCungCap": "CÔNG TY CỔ PHẦN VĂN HÓA VÀ TRUYỀN THÔNG",
+  "nhaXuatBan": "Phụ Nữ Việt Nam",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc626a8e65245f1f4b65cb"
+  },
+  "title": "The Outsider - Kẻ Song Trùng",
+  "author": "Stephen King",
+  "price": 247470,
+  "image": "/img/kinhdi5.jpg",
+  "nhaCungCap": "1980 Books",
+  "nhaXuatBan": "Thanh Niên",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc648e8e65245f1f4b65cd"
+  },
+  "title": "Tác Phẩm Kinh Điển Dành Cho Thiếu Nhi - Alice Ở Xứ Sở Diệu Kỳ",
+  "author": "Lewis Carroll",
+  "price": 26100,
+  "image": "/img/lophocmatngu1.jpg",
+  "nhaCungCap": "Đinh Tị",
+  "nhaXuatBan": "Văn Học",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc648e8e65245f1f4b65ce"
+  },
+  "title": "Ehon Kỹ Năng Sống - Miu Bé Nhỏ - Đừng Ăn Vạ Nhé! (Dành Cho Độ Tuổi 1-6) (Tái Bản 2023)",
+  "author": "Kawa, Mai Anh Đỗ",
+  "price": 24000,
+  "image": "/img/lophocmatngu2.jpg",
+  "nhaCungCap": "Phụ Nữ Việt Nam",
+  "nhaXuatBan": "Phụ Nữ Việt Nam",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc648e8e65245f1f4b65cf"
+  },
+  "title": "Tớ Là Mèo Pusheen - Tập 2 - Cuộc Sống Muôn Màu Của Pusheen - Tặng Kèm Obi + Sticker + Bookmark",
+  "author": "Claire Belton",
+  "price": 65000,
+  "image": "/img/lophocmatngu3.jpg",
+  "nhaCungCap": "Nhà Xuất Bản Kim Đồng",
+  "nhaXuatBan": "Kim Đồng",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc648e8e65245f1f4b65d0"
+  },
+  "title": "Kỹ Năng Sống Đầu Đời Cho Bé - Quy Tắc Ứng Xử Trên Bàn Ăn",
+  "author": "Thẩm Viên, Khương Tĩnh Á",
+  "price": 22500,
+  "image": "/img/lophocmatngu4.jpg",
+  "nhaCungCap": "Đinh Tị",
+  "nhaXuatBan": "NXB Thanh Niên",
+  "hinhThucBia": "Bìa Mềm"
+},
+{
+  "_id": {
+    "$oid": "6adc648e8e65245f1f4b65d1"
+  },
+  "title": "Giáo Dục Giới Tính Và Nhân Cách Dành Cho Bé Gái - Tớ Dũng Cảm Nói Không Với Kẻ Xấu!",
+  "author": "Trung tâm Sáng tạo Thiếu nhi",
+  "price": 22400,
+  "image": "/img/lophocmatngu5.jpg",
+  "nhaCungCap": "Đinh Tị",
+  "nhaXuatBan": "NXB Hà Nội",
+  "hinhThucBia": "Bìa Mềm"
+}]

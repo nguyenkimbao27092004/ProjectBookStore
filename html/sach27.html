@@ -50,37 +50,51 @@
                     <div class="chitietsanpham">
                         <div class="chitietnoidung">
                         <div class="hinhminhhoa">
-                            <img src="../img/lophocmatngu1.jpg" alt="">
+                            <img id="book-image" src="" alt="Bìa sách">
                         </div>
                         <div class="noidung">
-                            <h2 style="color: black;">Tác Phẩm Kinh Điển Dành Cho Thiếu Nhi - Alice Ở Xứ Sở Diệu Kỳ</h2>
+                            <h2 id="book-title" style="color: black;">Đang tải tên sách...</h2>
                             <div class="nd0" style="display: flex;">
-                            <div class="nd1" style="flex-basis: 50%;">
-                                <p>Nhà cung cấp: <b style="color:darkturquoise;">Đinh Tị</b></p>
-                                <p>Nhà xuất bản: <b>Văn Học</b></p>
-                            </div>
-                            <div class="nd2" style="flex-basis: 50%;">
-                                <p>Tác giả: <b>Lewis Carroll</b></p>
-                                <p>Hình thức bìa: <b>Bìa Mềm</b></p>
-                            </div>
-                        </div>
-                            <div class="nd3" style="margin-right: 480px;">
-
-                                <div class="rating">
-                                    <input type="radio" id="star5" name="rate" value="1" />
-                                    <label for="star5" title="text"></label>
-                                    <input type="radio" id="star4" name="rate" value="2" />
-                                    <label for="star4" title="text"></label>
-                                    <input type="radio" id="star3" name="rate" value="3" />
-                                    <label for="star3" title="text"></label>
-                                    <input type="radio" id="star2" name="rate" value="4" />
-                                    <label for="star2" title="text"></label>
-                                    <input checked="" type="radio" id="star1" name="rate" value="5" />
-                                    <label for="star1" title="text"></label>
+                                <div class="nd1" style="flex-basis: 50%;">
+                                    <p>Nhà cung cấp: <b id="book-supplier" style="color: darkturquoise;">...</b></p>
+                                    <p>Nhà xuất bản: <b id="book-publisher">...</b></p>
+                                </div>
+                                <div class="nd2" style="flex-basis: 50%;">
+                                    <p>Tác giả: <b id="book-author">...</b></p>
+                                    <p>Hình thức bìa: <b id="book-cover">...</b></p>
                                 </div>
                             </div>
+
+                            <script>
+                                const urlParams = new URLSearchParams(window.location.search);
+                                const bookId = urlParams.get('id') || 0;
+
+                                fetch('/api/books')
+                                    .then(res => {
+                                        if (!res.ok) throw new Error("Server chưa có đường dẫn /api/books (Mã lỗi: " + res.status + ")");
+                                        return res.json();
+                                    })
+                                    .then(books => {
+                                        const book = books[bookId];
+                                        if (book) {
+                                            document.getElementById('book-image').src = book.image;
+                                            document.getElementById('book-title').innerText = book.title;
+                                            document.getElementById('book-supplier').innerText = book.nhaCungCap;
+                                            document.getElementById('book-publisher').innerText = book.nhaXuatBan;
+                                            document.getElementById('book-author').innerText = book.author;
+                                            document.getElementById('book-cover').innerText = book.hinhThucBia;
+                                            document.getElementById('book-price').innerText = book.price.toLocaleString('vi-VN') + ' đ';
+                                        } else {
+                                            document.getElementById('book-title').innerText = "Chưa có sách ở id=" + bookId + " trong MongoDB!";
+                                        }
+                                    })
+                                    .catch(err => {
+                                        console.error(err);
+                                        document.getElementById('book-title').innerText = "Lỗi: " + err.message;
+                                    });
+                            </script>
                             <div class="nd4">
-                                <p style="color: red; font-size: 25px;"><b>26.100 đ</b></p>
+                                <p style="color: red; font-size: 25px;"><b id="book-price">...</b></p>
                                 <p>Chính sách đổi trả:&nbsp;&nbsp;
                                     Đổi trả sản phẩm trong 30 ngày
                                     </p>

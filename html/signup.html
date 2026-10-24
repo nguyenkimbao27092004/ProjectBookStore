@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOBOS - Sign Up</title>
+    
+    <!-- Nhúng Font & Icon cho phần lưới thành viên -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Các file CSS & JS gốc của bạn -->
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/aboutus.css"> <!-- Thêm file CSS thiết kế lưới card -->
+    <link rel="stylesheet" href="../bootstrap-icons-1.11.3/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="../img/icon.png">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <style>
+        /* =====================================================
+           KOBOS SIGN UP - CSS CHỈ DÀNH CHO TRANG ĐĂNG KÝ
+           Không ảnh hưởng header, footer và các trang khác
+           ===================================================== */
+
+        main.signup-page {
+            position: relative;
+            isolation: isolate;
+            width: 100%;
+            min-height: 780px;
+            height: auto;
+            padding: 55px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: #11101b;
+            font-family: 'Mali', sans-serif;
+        }
+
+        main.signup-page > div:first-child {
+            position: absolute;
+            inset: 0;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        main.signup-page #background-video1 {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        main.signup-page::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            pointer-events: none;
+            background: linear-gradient(
+                135deg,
+                rgba(10, 9, 20, 0.82),
+                rgba(17, 16, 27, 0.58),
+                rgba(0, 0, 0, 0.84)
+            );
+        }
+
+        main.signup-page .signup-form {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 470px;
+            flex-grow: 0;
+            margin: auto;
+            padding: 36px 38px;
+            color: #f5f5f5;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 24px;
+            background: rgba(17, 16, 27, 0.80);
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.45),
+                0 0 35px rgba(130, 100, 220, 0.12);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        main.signup-page .signup-form h1 {
+            margin: 0 0 28px;
+            color: #fff;
+            font-family: 'Agbalumo', 'Mali', sans-serif;
+            font-size: 36px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        main.signup-page .signup-form .form-group {
+            margin: 0 0 19px;
+            color: #f5f5f5;
+            text-align: left;
+        }
+
+        main.signup-page .signup-form .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #f1efff;
+            font-family: 'Mali', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        main.signup-page .signup-form .form-input {
+            display: block;
+            float: none;
+            width: 100%;
+            height: 48px;
+            margin: 0;
+            padding: 0 15px;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 11px;
+            outline: none;
+            background: rgba(255, 255, 255, 0.07);
+            font-family: 'Mali', sans-serif;
+            font-size: 13px;
+            text-transform: none;
+            transition: border-color .25s ease, background .25s ease, box-shadow .25s ease;
+        }
+
+        main.signup-page .signup-form .form-input::placeholder {
+            color: rgba(255, 255, 255, 0.48);
+            font-size: 12px;
+            text-transform: none;
+        }
+
+        main.signup-page .signup-form .form-input:focus {
+            border-color: #b7a2ff;
+            background: rgba(255, 255, 255, 0.11);
+            box-shadow: 0 0 0 3px rgba(153, 120, 255, 0.16);
+        }
+
+        main.signup-page .signup-form .form-input:-webkit-autofill,
+        main.signup-page .signup-form .form-input:-webkit-autofill:hover,
+        main.signup-page .signup-form .form-input:-webkit-autofill:focus {
+            -webkit-text-fill-color: #fff;
+            transition: background-color 9999s ease-out;
+        }
+
+        main.signup-page .signup-form #usercheck,
+        main.signup-page .signup-form #emailError,
+        main.signup-page .signup-form #passcheck,
+        main.signup-page .signup-form #conpasscheck {
+            margin-top: 5px;
+            color: #ff8585 !important;
+            font-family: 'Mali', sans-serif;
+            font-size: 11px !important;
+            line-height: 1.6;
+        }
+
+        main.signup-page .signup-form #success-message {
+            color: #75e6a1 !important;
+            font-size: 13px;
+        }
+
+        main.signup-page .signup-form #submitbtn {
+            display: block;
+            width: 100%;
+            min-height: 49px;
+            margin-top: 24px;
+            padding: 12px 20px;
+            color: #fff;
+            border: 1px solid transparent;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #a88bff, #7452d6);
+            font-family: 'Mali', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            cursor: pointer;
+            box-shadow: 0 8px 22px rgba(116, 82, 214, .25);
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+
+        main.signup-page .signup-form #submitbtn:hover {
+            transform: translateY(-2px);
+            background: linear-gradient(135deg, #bca6ff, #8969ed);
+            box-shadow: 0 12px 28px rgba(116, 82, 214, .4);
+        }
+
+        main.signup-page .signup-form #submitbtn:active {
+            transform: translateY(0);
+        }
+
+        main.signup-page .signup-form .mt-3.text-center {
+            margin-top: 23px !important;
+        }
+
+        main.signup-page .signup-form .mt-3.text-center span {
+            color: #aaa !important;
+            font-size: 12px !important;
+        }
+
+        main.signup-page .signup-form .mt-3.text-center a {
+            color: #c2adff !important;
+            font-size: 13px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        main.signup-page .signup-form .mt-3.text-center a:hover {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            main.signup-page {
+                min-height: 740px;
+                padding: 40px 18px;
+            }
+
+            main.signup-page .signup-form {
+                max-width: 440px;
+                padding: 32px 28px;
+            }
+
+            main.signup-page .signup-form h1 {
+                font-size: 32px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            main.signup-page {
+                min-height: 700px;
+                padding: 30px 14px;
+            }
+
+            main.signup-page .signup-form {
+                padding: 28px 21px;
+                border-radius: 19px;
+            }
+
+            main.signup-page .signup-form h1 {
+                margin-bottom: 23px;
+                font-size: 29px;
+            }
+
+            main.signup-page .signup-form .form-group {
+                margin-bottom: 16px;
+            }
+
+            main.signup-page .signup-form .form-input {
+                height: 46px;
+                font-size: 12px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            main.signup-page .signup-form,
+            main.signup-page .signup-form * {
+                transition: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--------------------------------------------------------------------------------------------menu------------------------------------------------------------------->
+    <header class="header">
+        <div class="header-2">
+            <div class="header-1">
+                <img src="../img/Logo.png" alt="logo">        
+            </div>
+            
+            <nav class="menu">
+                <li><a href="../html/home.html" class="active">Home</a></li>
+                <li><a href="../html/event.html">Events</a></li>
+                <li><a href="../html/gioithieukobos.html#aboutus">About Us</a></li>
+                <li><a href="#footer_content">Support</a></li>
+            </nav>
+        
+            <div class="icons">
+                <div><input type="text" placeholder="Search here" name="search" style="border-radius: 20px; width: 250px;"></div>
+                <div id="search-btn" class="bi bi-search"></div>
+                <a href="#" class="bi bi-bookmark-heart-fill"></a>
+                <a href="#" class="bi bi-bag-fill"></a>
+                <a href="../html/signin.html" class="bi bi-person-circle"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="signup-page">
+        <div>
+             <video autoplay muted loop id="background-video1">
+                        <source src="../img/SignInBG.mp4" type="video/mp4">
+            </video>
+
+        </div>
+    <form action="" class="form signup-form">
+        <h1 class="text-center">Sign Up</h1>
+   <div class="form-group">
+                  <label for="txtName">Tên Người Dùng</label>
+                  <input type="text" name="txtName" id="txtName" placeholder="Nhập tên người dùng" class="form-input">
+                  <div id="usercheck" style="color: #ff6b6b; font-size: 13px; margin-top: 5px;">*Vui lòng nhập tên người dùng*</div> 
+            </div>
+            <div class="form-group">
+                  <label for="txtEmail">Email đăng nhập</label>
+                  <input type="email" name="email" id="txtEmail" placeholder="example@gmail.com" class="form-input" style="text-transform: lowercase;">
+                  <div id="emailError" style="color: #ff6b6b; font-size: 13px; margin-top: 5px; display: none;">*Vui lòng nhập Email hợp lệ*</div>
+            </div>
+            <div class="form-group">
+                  <label for="txtPW">Mật Khẩu</label>
+                  <input type="password" name="txtPW" id="txtPW" placeholder="Ít nhất 8 kí tự" class="form-input">
+                  <div id="passcheck" style="color: #ff6b6b; font-size: 13px; margin-top: 5px;">*Vui lòng nhập mật khẩu*</div>
+            </div>
+            <div class="form-group">
+                  <label for="txtCPW">Nhập Lại Mật Khẩu</label>
+                  <input type="password" name="txtCPW" id="txtCPW" placeholder="Nhập lại mật khẩu" class="form-input">
+                  <div id="conpasscheck" style="color: #ff6b6b; font-size: 13px; margin-top: 5px;">*Vui lòng nhập đúng mật khẩu*</div>
+            </div>
+            <div class="success-message" style="display:none; color: #51cf66; text-align: center; margin-bottom: 15px; font-weight: 500;" id="success-message">Đăng ký thành công!</div>
+            <input type="submit" class="btn btn-primary mt-3" id="submitbtn" value="Sign Up">
+            <div class="mt-3 text-center">
+                  <span style="color: #aaa; font-size: 14px;">Đã có tài khoản?</span>
+                  <a href="../html/signin.html" class="text-decoration-none ms-2" style="color: #fff; font-weight: 500;">Sign In</a>
+            </div>
+            </form>
+      </main>
+
+    <!------------------------------------------------------------------------------------------------footer------------------------------------------------------------------------------------>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <h1>KOBOS</h1>
+                <p style="color: white;">Impossible is nothing.</p>
+                <p style="color:var(--color-neutral-30);">Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM Công Ty Cổ Phần Phát Hành Sách TP HCM.</p>
+                <P style="text-align: center; color:var(--color-neutral-30);"> - <i class="bi bi-geo-alt-fill"></i> 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam -</P>
+                <p style="color:var(--color-neutral-30);">KOBOS.com nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống <c1>KOBOS</c1> trên toàn quốc.</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/" class="footer-link" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" class="footer-link" id="facebook">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/" class="footer-link" id="tiktok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <ul class="footer-list">
+                <h3>Map</h3>
+                <div style="max-width:100%;overflow:hidden;color:red;width:300px;height:300px;">
+                    <div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;">
+                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=62+Đường+Lê+Lợi,+Bến+Nghé,+Quận+1,+Thành+phố+Hồ+Chí+Minh,+Việt+Nam&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                    </div>
+                </div>
+            </ul>
+
+            <ul class="footer-list">
+                <li><h3>Services</h3></li>
+                <li><a href="../html/dieukhoansudung.html" class="footer-link">Điều khoản sử dụng</a></li>
+                <li><a href="../html/chinhsachbaomat.html" class="footer-link">Chính sách bảo mật thông tin cá nhân</a></li>
+                <li><a href="../html/gioithieukobos.html" class="footer-link">Giới thiệu Kobos</a></li>
+                <li><a href="../html/chinhsachbaohanh.html" class="footer-link">Chính sách bảo hành - bồi hoàn</a></li>
+                <li><h3>Contact</h3></li>
+                <li><p style="color:var(--color-neutral-30);"><i class="bi bi-telephone"> </i>1900636467</p></li>
+                <li><p style="color:var(--color-neutral-30);"><i class="bi bi-envelope"> </i>cskh@kobos.com.vn</p></li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Subscribe</h3>
+                <p>Enter your e-mail to get notified about our news notifications</p>
+                <div id="input_group">
+                    <input type="email" id="email" placeholder="Example@gmail.com" style="background-color: white; color: black;">
+                    <button><i class="bi bi-envelope-open"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_copyright">
+            &#169 2024 all rights reserved. Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.
+        </div>
+    </footer>
+
+    <!-- Script kiểm tra form Đăng ký của bạn -->
+    <script>
+        $(document).ready(function () { 
+            // Validate Username 
+            $("#usercheck").hide(); 
+            let usernameError = true; 
+            $("#txtName").keyup(function () { 
+                validateUsername(); 
+            }); 
+
+            function validateUsername() { 
+                let usernameValue = $("#txtName").val(); 
+                if (usernameValue.length == "") { 
+                    $("#usercheck").show(); 
+                    usernameError = false; 
+                    return false; 
+                } else if (usernameValue.length < 4 || usernameValue.length > 15) { 
+                    $("#usercheck").show(); 
+                    $("#usercheck").html("*Tên đăng nhập quá ngắn*"); 
+                    usernameError = false; 
+                    return false; 
+                } else { 
+                    $("#usercheck").hide();
+                    return true;
+                } 
+            } 
+
+            // Validate Email 
+            function validateEmail() {
+                const email = document.getElementById("txtEmail");
+                let emailValue = email.value;
+                let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+                if (emailValue.length == 0) {
+                    $("#emailError").show();
+                    return false;
+                } else if (!regex.test(emailValue)) {
+                    $("#emailError").text("*Địa chỉ email không hợp lệ*").show();
+                    return false;
+                } else {
+                    $("#emailError").hide();
+                    return true;
+                }
+            }
+
+            const emailInput = document.getElementById("txtEmail");
+            emailInput.addEventListener("blur", validateEmail);
+
+            // Validate Password 
+            $("#passcheck").hide(); 
+            let passwordError = true; 
+            $("#txtPW").keyup(function () { 
+                validatePassword(); 
+            }); 
+
+            function validatePassword() { 
+                let passwordValue = $("#txtPW").val(); 
+                if (passwordValue.length == "") { 
+                    $("#passcheck").show(); 
+                    passwordError = false; 
+                    return false; 
+                } 
+
+                if (passwordValue.length < 8 || passwordValue.length > 20) { 
+                    $("#passcheck").show(); 
+                    $("#passcheck").html("*Tối thiểu 8 kí tự*"); 
+                    $("#passcheck").css("color", "red"); 
+                    passwordError = false; 
+                    return false; 
+                } else { 
+                    $("#passcheck").hide(); 
+                    return true;
+                } 
+            } 
+
+            // Validate Confirm Password 
+            $("#conpasscheck").hide(); 
+            let confirmPasswordError = true; 
+            $("#txtCPW").keyup(function () { 
+                validateConfirmPassword(); 
+            }); 
+
+            function validateConfirmPassword() { 
+                let confirmPasswordValue = $("#txtCPW").val(); 
+                let passwordValue = $("#txtPW").val(); 
+                if (passwordValue != confirmPasswordValue) { 
+                    $("#conpasscheck").show(); 
+                    $("#conpasscheck").html("*Kiểm tra lại mật khẩu*"); 
+                    $("#conpasscheck").css("color", "red"); 
+                    confirmPasswordError = false; 
+                    return false; 
+                } else { 
+                    $("#conpasscheck").hide();
+                    return true;
+                } 
+            } 
+
+            $("#submitbtn").click(function (event) {
+    event.preventDefault();
+    let isUsernameValid = validateUsername();
+    let isPasswordValid = validatePassword();
+    let isConfirmPasswordValid = validateConfirmPassword();
+    let isEmailValid = validateEmail();
+
+    if (isUsernameValid && isPasswordValid && isConfirmPasswordValid && isEmailValid) {
+        const payload = {
+            username: $("#txtName").val(),
+            email: $("#txtEmail").val(),
+            password: $("#txtPW").val()
+        };
+
+                $.ajax({
+                    url: 'http://localhost:3000/api/signup',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(payload),
+                    success: function(response) {
+                        $(".success-message").text(response.message).css("display", "block").css("color", "#75e6a1");
+                        $(".signup-form")[0].reset();
+                        setTimeout(() => window.location.href = 'signin.html', 1500); 
+                    },
+                    error: function(xhr) {
+                        alert(xhr.responseJSON?.message || 'Lỗi hệ thống!');
+                    }
+                });
+            }
+        });
+        });
+    </script>
+</body>
+</html>

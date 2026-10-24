@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6adcd5144d9c78295bada372"
+  },
+  "username": "vuong123",
+  "email": "vuong1234@gmail.com",
+  "passwordHash": "$2b$10$dWvpfBOAY6X34rMCuB/Xnu0rbyvXSVfck6RWYQTsk2XaYacivWUQy",
+  "role": "user",
+  "bookmarks": [],
+  "cart": [],
+  "createdAt": {
+    "$date": "2026-10-24T15:56:04.919Z"
+  },
+  "__v": 0
+}]
