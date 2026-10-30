@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "6ae1d11efa7cdc5c5f103565"
+  },
+  "username": "vương vũ",
+  "email": "vuongvu69@gmail.com",
+  "passwordHash": "$2b$10$5vFkFpVrL1t9kb5hgefTB.OEDn0RN.kGOjKmJ7CP6fcLYyS9Dg.W.",
+  "role": "user",
+  "bookmarks": [],
+  "cart": [],
+  "createdAt": {
+    "$date": "2026-10-28T10:40:30.576Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ae30b4f1191218040b23cde"
+  },
+  "username": "admin",
+  "email": "admin012@gmail.com",
+  "passwordHash": "$2b$10$PX15TT6Gtj8IN8PhvkAZpOUhglSp2aASNReTWfhgwrO1kt/SDf7Fq",
+  "role": "admin",
+  "bookmarks": [],
+  "cart": [],
+  "createdAt": {
+    "$date": "2026-10-29T09:01:03.220Z"
+  },
+  "__v": 0
+}]

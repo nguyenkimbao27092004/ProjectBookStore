@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6adc94c81590df8a4cef41ab"
+  },
+  "title": "Giao lưu giới thiệu bộ sách Thưởng thức Triết học",
+  "imageUrl": "/img/events/thuong-thuc-triet-hoc.jpg",
+  "eventTime": "15:00 - 17:00 | Thứ Bảy (Samedi), 20.04.2024",
+  "location": "Hồ Văn - Văn Miếu, Hà Nội",
+  "linkUrl": "/su-kien/thuong-thuc-triet-hoc",
+  "isActive": true,
+  "displayOrder": 1,
+  "createdAt": {
+    "$date": "2026-10-24T18:30:00Z"
+  }
+}]
